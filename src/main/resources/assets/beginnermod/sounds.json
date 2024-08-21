@@ -1,0 +1,5 @@
+{
+  "fleshbreak": {"category": "master","sounds": [{"name": "fleshbreak0","stream": false}]},
+  "fleshplace": {"category": "master","sounds": [{"name": "fleshplace0","stream": false}]},
+  "fleshstep": {"category": "master","sounds": [{"name": "fleshstep0","stream": false}]}
+}

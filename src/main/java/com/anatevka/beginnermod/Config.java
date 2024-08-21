@@ -1,4 +1,4 @@
-package com.myname.mymodid;
+package com.anatevka.beginnermod;
 
 import java.io.File;
 
@@ -6,7 +6,7 @@ import net.minecraftforge.common.config.Configuration;
 
 public class Config {
 
-    public static String greeting = "Hello World";
+    public static String greeting = "Chaos is a ladder";
 
     public static void synchronizeConfiguration(File configFile) {
         Configuration configuration = new Configuration(configFile);
