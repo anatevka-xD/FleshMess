@@ -40,10 +40,7 @@ public class Flesh extends Block {
 
     public boolean canSustainPlant(IBlockAccess world, int x, int y, int z, ForgeDirection direction,
         IPlantable plantable) {
-        if (plantable.getPlantType(world, x, y, z) == EnumPlantType.Plains) {
-            return true;
-        }
-        return false;
+        return plantable.getPlantType(world, x, y, z) == EnumPlantType.Plains;
     }
 
     protected boolean canSilkHarvest() {
@@ -84,9 +81,9 @@ public class Flesh extends Block {
         List<Block> whitelist = Arrays.asList(Blocks.grass);
 
         if (!worldIn.isRemote) {
-            for (int i = -3; i < 4; i++) {
-                for (int j = -3; j < 4; j++) {
-                    for (int k = -3; k < 4; k++) {
+            for (int i = -1; i < 2; i++) {
+                for (int j = -1; j < 2; j++) {
+                    for (int k = -1; k < 2; k++) {
                         spreadFlesh(worldIn, x + i, y + j, z + k, whitelist);
                     }
                 }
@@ -95,7 +92,7 @@ public class Flesh extends Block {
     }
 
     public void onEntityCollidedWithBlock(World worldIn, int x, int y, int z, Entity entityIn) {
-        if (entityIn instanceof EntityLivingBase livingBase && !livingBase.isPotionActive(31)) {
+        if (entityIn instanceof EntityLivingBase && ((EntityLivingBase) entityIn).isPotionActive(31)) {
             ((EntityLivingBase) entityIn).addPotionEffect(new PotionEffect(31, 10, 0));
         }
     }
