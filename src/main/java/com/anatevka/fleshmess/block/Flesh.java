@@ -4,7 +4,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockBush;
+import net.minecraft.block.BlockLeaves;
+import net.minecraft.block.BlockLog;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -81,9 +84,9 @@ public class Flesh extends Block {
         List<Block> whitelist = Arrays.asList(Blocks.grass);
 
         if (!worldIn.isRemote) {
-            for (int i = -1; i < 2; i++) {
-                for (int j = -1; j < 2; j++) {
-                    for (int k = -1; k < 2; k++) {
+            for (int i = -3; i < 4; i++) {
+                for (int j = -3; j < 4; j++) {
+                    for (int k = -3; k < 4; k++) {
                         spreadFlesh(worldIn, x + i, y + j, z + k, whitelist);
                     }
                 }

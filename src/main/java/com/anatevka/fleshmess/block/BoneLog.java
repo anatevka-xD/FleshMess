@@ -12,13 +12,13 @@ import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class FleshLog extends Flesh {
+public class BoneLog extends Flesh {
 
     @SideOnly(Side.CLIENT)
     protected IIcon top_icon;
     protected IIcon side_icon;
 
-    public FleshLog(Material materialIn) {
+    public BoneLog(Material materialIn) {
         super(materialIn);
     }
 
