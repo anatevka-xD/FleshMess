@@ -17,11 +17,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.anatevka.fleshmess.block.BoneLog;
-import com.anatevka.fleshmess.block.FleshLeaves;
-import com.anatevka.fleshmess.block.FleshBlock;
-import com.anatevka.fleshmess.block.FleshStrand;
 import com.anatevka.fleshmess.block.CorruptedSoil;
-
+import com.anatevka.fleshmess.block.FleshBlock;
+import com.anatevka.fleshmess.block.FleshLeaves;
+import com.anatevka.fleshmess.block.FleshStrand;
 import com.anatevka.fleshmess.item.BoneScythe;
 import com.anatevka.fleshmess.potion.ModPotions;
 
