@@ -1,4 +1,4 @@
-package com.anatevka.beginnermod;
+package com.anatevka.fleshmess;
 
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -12,8 +12,8 @@ public class CommonProxy {
     public void preInit(FMLPreInitializationEvent event) {
         Config.synchronizeConfiguration(event.getSuggestedConfigurationFile());
 
-        BeginnerMod.LOG.info(Config.greeting);
-        BeginnerMod.LOG.info("I am BeginnerMod at version " + Tags.VERSION);
+        FleshMess.LOG.info(Config.greeting);
+        FleshMess.LOG.info("I am Flesh Mess at version " + Tags.VERSION);
     }
 
     // load "Do your mod setup. Build whatever data structures you care about. Register recipes." (Remove if not needed)

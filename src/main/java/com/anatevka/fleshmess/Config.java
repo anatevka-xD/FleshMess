@@ -1,4 +1,4 @@
-package com.anatevka.beginnermod;
+package com.anatevka.fleshmess;
 
 import java.io.File;
 
@@ -6,7 +6,7 @@ import net.minecraftforge.common.config.Configuration;
 
 public class Config {
 
-    public static String greeting = "Chaos is a ladder";
+    public static String greeting = "Flesh Mess a-OK";
 
     public static void synchronizeConfiguration(File configFile) {
         Configuration configuration = new Configuration(configFile);

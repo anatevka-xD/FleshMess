@@ -1,4 +1,4 @@
-package com.anatevka.beginnermod;
+package com.anatevka.fleshmess;
 
 public class ClientProxy extends CommonProxy {
 

@@ -1,0 +1,9 @@
+itemGroup.tabFleshMess=Flesh Mess
+item.BoneScythe.name=Bone Scythe
+tile.FleshBlock.name=Flesh Block
+tile.FleshStrand.name=Flesh Strand
+tile.BoneLog.name=Bone Log
+tile.FleshLeaves.name=Flesh Leaves
+tile.CorruptedSoil.name=Corrupted Soil
+potion.CorruptionPotion=Corruption
+death.attack.fleshDamage=%1$s was consumed by corruption
