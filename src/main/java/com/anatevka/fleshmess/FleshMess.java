@@ -36,13 +36,11 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class FleshMess {
 
     public static Item boneScythe;
-
     public static Block fleshBlock;
     public static Block boneLog;
     public static Block fleshLeaves;
     public static Block fleshStrand;
     public static Block corruptedSoil;
-
     public static Potion corruptionPotion;
 
     public static DamageSource FLESH_DAMAGE = (new DamageSource("fleshDamage")).setMagicDamage();
